@@ -24,6 +24,19 @@ li {
   list-style: none;
 }
 
+/* Variables */
+
+:root {
+  --dark-bg: #1f2937;
+  --heroMainTxt-color: #f9faf8;
+  --heroMainTxt-size: 48px;
+
+  --heroSecondaryTxt-color: #e5e7eb;
+  --heroSecondaryTxt-size: 18px;
+}
+
+/* Buttons Custom */
+
 .btn {
   border: 0;
   padding: 1rem 4rem;
@@ -43,15 +56,41 @@ li {
   border: 2px solid var(--heroMainTxt-color);
 }
 
-/* Variables */
+/* Utility Paddings and Margins */
 
-:root {
-  --dark-bg: #1f2937;
-  --heroMainTxt-color: #f9faf8;
-  --heroMainTxt-size: 48px;
+/* paddings */
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.p-4 {
+  padding: 4rem;
+}
+.p-5 {
+  padding: 5rem;
+}
 
-  --heroSecondaryTxt-color: #e5e7eb;
-  --heroSecondaryTxt-size: 18px;
+/* margins */
+
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+.m-4 {
+  margin: 4rem;
+}
+.m-5 {
+  margin: 4rem;
 }
 
 /* Navigation Section */
@@ -132,4 +171,30 @@ ul:hover {
 
 /* Section Info */
 .info {
+  background-color: var(--heroMainTxt-color);
+}
+
+.info__title {
+  color: var(--dark-bg);
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 20rem;
+  height: 20rem;
+  border: 5px solid #3882f6;
+  border-radius: 1rem;
+}
+
+.card__txt {
+  text-align: center;
+  font-size: 18px;
+  color: darkgray;
 }
