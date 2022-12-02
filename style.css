@@ -1,0 +1,23 @@
+/* Default settings */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* 10px*/
+}
+
+/* Variables */
+
+:root {
+  --dark-bg: #1f2937;
+
+  --heroMainTxt-color: #f9faf8;
+  --heroMainTxt-size: 48px;
+
+  --heroSecondaryTxt-color: #e5e7eb;
+  --heroSecondaryTxt-size: 18px;
+}
