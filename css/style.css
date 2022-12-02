@@ -186,15 +186,14 @@ ul:hover {
   justify-content: center;
 }
 
-.card {
-  width: 20rem;
+.container .card {
+  width: 18rem;
   height: 20rem;
-  border: 5px solid #3882f6;
-  border-radius: 1rem;
+  margin: 2rem;
 }
 
-.card__txt {
-  text-align: center;
-  font-size: 18px;
-  color: darkgray;
+.container .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
 }
