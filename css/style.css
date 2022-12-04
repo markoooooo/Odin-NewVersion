@@ -209,3 +209,25 @@ ul:hover {
   text-align: center;
   margin-bottom: 5rem;
 }
+
+/* Quote Section */
+
+.quote {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+  background-color: var(--heroSecondaryTxt-color);
+  color: var(--dark-bg);
+  font-size: 36px;
+  font-style: italic;
+}
+
+.quote .container {
+  max-width: 900px;
+}
+
+.quote .quote__author {
+  float: right;
+  font-weight: bold;
+}
