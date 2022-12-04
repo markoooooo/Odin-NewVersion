@@ -114,8 +114,12 @@ li {
 ul {
   width: 70rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   cursor: pointer;
+}
+
+ul li {
+  margin-right: 2rem;
 }
 
 ul:hover {
@@ -136,17 +140,23 @@ ul:hover {
   padding: 10rem;
 }
 
+.hero__left .container {
+  /* border: 1px solid gold; */
+  margin-left: 6rem;
+}
+
 .hero__title {
   font-size: 48px;
   color: var(--heroMainTxt-color);
 }
 
 .hero__text {
-  font-size: 18px;
+  font-size: 22px;
   color: var(--heroSecondaryTxt-color);
 }
 
 .hero__btn {
+  margin-top: 2rem;
 }
 
 /* Right side */
@@ -154,46 +164,48 @@ ul:hover {
 .hero__right {
   width: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .hero__img {
-  width: 60rem;
-  height: 30rem;
-  background-color: #6d747d;
-  color: #f9faf8;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  object-fit: cover;
 }
 
 /* Section Info */
+
 .info {
-  background-color: var(--heroMainTxt-color);
 }
 
-.info__title {
-  color: var(--dark-bg);
+.info .info__title {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
+  color: var(--dark-bg);
 }
 
-.container {
+.info .container {
   display: flex;
   justify-content: center;
 }
 
-.container .card {
-  width: 18rem;
-  height: 20rem;
-  margin: 2rem;
+.info .card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 4rem;
 }
 
-.container .card img {
-  width: 100%;
-  height: 100%;
-  border-radius: 1.5rem;
+.info .card .card__img {
+  object-fit: cover;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1rem;
+}
+
+.info .card .card__text {
+  font-size: 18px;
+  color: #78808a;
+  margin: 2rem 0;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5rem;
 }
