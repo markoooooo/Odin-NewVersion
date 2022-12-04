@@ -53,7 +53,7 @@ li {
 .btn--secondary {
   background-color: #3882f6;
   color: var(--heroMainTxt-color);
-  border: 2px solid var(--heroMainTxt-color);
+  border: 3px solid var(--heroMainTxt-color);
 }
 
 /* Utility Paddings and Margins */
@@ -230,4 +230,45 @@ ul:hover {
 .quote .quote__author {
   float: right;
   font-weight: bold;
+}
+
+/* Call to Action Section */
+
+.call {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call .contanier {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 15rem;
+  background-color: #3882f6;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.call .call__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.call .call__text {
+  font-size: 18px;
+}
+
+/* Footer Section */
+
+.footer {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-bg);
+  color: #fff;
+  font-size: 24px;
 }
